@@ -1,0 +1,453 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Font';
+}
+
+#crsr {
+    width: .5vw;
+    height: .5vw;
+    border-radius: 50%;
+    background: #ffffff;
+    /* border: 1.5px solid #fff; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+}
+
+/* #main {
+    position: relative;
+} */
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 9999;
+}
+
+#hero-overlay {
+    width: 100%;
+    height: 100%;
+}
+
+#hero-overlay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero-content {
+    width: 100%;
+    height: 100%;
+    padding: 0 22vw;
+    padding-top: 6vw;
+    padding-bottom: 3vw;
+    position: absolute;
+    top: 0;
+}
+
+#hero-nav {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero-nav h3 {
+    font-size: .9vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    mix-blend-mode: difference;
+}
+
+#main-text {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-text h1 {
+    font-size: 5.5vw;
+    font-weight: 600;
+    mix-blend-mode: difference;
+}
+
+#hero-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-bottom-text {
+    text-align: center;
+    mix-blend-mode: difference;
+}
+
+.hero-bottom-text h5 {
+    font-size: .8vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: .95vw;
+}
+
+.hero-bottom-text h4 {
+    font-size: 1vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#stadium {
+    width: 100%;
+    height: fit-content;
+    background-color: #000410;
+    position: relative;
+    z-index: 100;
+}
+
+#navbar {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 1.5vw;
+    z-index: 9;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 0.65vw;
+    text-transform: uppercase;
+    padding-left: .5vw;
+}
+
+.left-nav h3 a {
+    text-decoration: none;
+    color: #E4E6E9;
+    font-weight: 500;
+}
+
+.center-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-nav img {
+    height: 100%;
+    width: 10.5vw;
+    padding-left: 3vw;
+    font-size: 4vw;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    font-size: 0.65vw;
+    text-transform: uppercase;
+    padding-right: .5vw;
+}
+
+.right-nav h3 a {
+    text-decoration: none;
+    color: #E4E6E9;
+    font-weight: 500;
+}
+
+#stadiumtext {
+    width: 100%;
+    margin: auto;
+    height: 60vh;
+    padding-left: 18%;
+    padding-top: 10vw;
+}
+
+#stadiumtext h1 {
+    font-size: 5vw;
+    line-height: 4.5vw;
+    font-weight: 500;
+}
+
+#movingtext {
+    width: 100%;
+    height: 32vh;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#movingtext h1 {
+    display: inline-block;
+    font-size: 12vw;
+    font-weight: 500;
+    padding-top: 2vw;
+    animation-name: anime;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#section1 {
+    width: 100%;
+    height: 90vh;
+}
+
+#videoSection1 {
+    width: 80%;
+    height: 80vh;
+    margin: 10vh 10%;
+    cursor: pointer;
+}
+
+
+#videoSection1 video {
+    width: 100%;
+    height: 95%;
+    position: relative;
+    object-fit: cover;
+    transition: all linear .1s;
+}
+
+#videoSection1 h6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    font-weight: 10;
+    z-index: 9;
+}
+
+
+#videoSection1 video:hover {
+    transform: scale(1.03);
+}
+
+
+
+.section1-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .3vw 0;
+}
+
+.section1-info h4 {
+    font-size: .85vw;
+    font-weight: 400;
+}
+
+#section2 {
+    width: 100%;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 0 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2First{
+    width: 60%;
+    height: 100%;
+}
+
+.section2First video {
+    width: 85%;
+    height: 60%;
+    margin-top: 25%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear .1s;
+}
+
+.section2First .section1-info h4 {
+    padding-right: 9vw;
+}
+
+.section2Second {
+    width: 40%;
+    height: 100%;
+}
+
+.section2Second video {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear .1s;
+}
+
+.section2First video:hover, .section2Second video:hover {
+    transform: scale(1.03);
+}
+
+#section3 {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3Video {
+    width: 50%;
+    height: 80%;
+}
+
+.section3Video video {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear .1s;
+}
+
+.section3Video video:hover {
+    transform: scale(1.03);
+}
+
+#section4 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: flex-end;
+    padding: 3vw 2vw;
+}
+
+.section4Video {
+    width: 76%;
+    height: 90%;
+}
+
+.section4Video video {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear .1s;
+}
+
+.section4Video .section1-info {
+    padding-top: 1vw;
+}
+
+.section4Video video:hover {
+    transform: scale(1.048);
+}
+
+#section5 {
+    width: 100%;
+    height: 60vh;
+    padding: 0 2vw;
+}
+
+.section5Video {
+    width: 50%;
+    height: 90%;
+}
+
+.section5Video video {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear .1s;
+}
+
+.section5Video video:hover {
+    transform: scale(1.03);
+}
+
+#section6 {
+    width: 100%;
+    height: 50vh;
+}
+
+#footer {
+    width: 100%;
+    height: 30vh;
+    padding: 2vw;
+}
+
+#footerFirst {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-1 {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-1-text h3 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    margin-bottom: 0.2vw;
+}
+
+.footer-1-text h5 {
+    font-size: .85vw;
+    font-weight: 200;
+    opacity: 0.7;
+}
+
+#footer-2 {
+    width: 30%;
+    border-bottom: 1px solid #ffffff8a;
+}
+
+#footer-2 h3 {
+    font-size: .8vw;
+    font-weight: 500;
+    margin-bottom: .6vw;
+    text-transform: uppercase;
+} 
+
+#footer-2 input {
+    width: 95%;
+    background: none;
+    border: none;
+    outline: none;
+    padding-top: 2vw;
+}
+
+#footer-2 input::placeholder {
+    font-size: .8vw;
+}
+
+
+
+
+
+
+
+/* work page code */

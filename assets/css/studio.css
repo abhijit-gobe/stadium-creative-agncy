@@ -1,0 +1,156 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Font';
+    background-color: #000410;
+}
+
+
+
+#studio {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    z-index: 100;
+}
+
+#studio #navbar {
+    position: relative;
+}
+
+#studio #navbar .left-nav h3 a, #studio #navbar .right-nav h3 a{
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+#page1 {
+    width: 100%;
+    height: 60vh;
+    padding: 0vw 2vw;
+    padding-top: 8vw;
+    border-bottom: 1px solid #ffffff71;
+}
+
+#page1-flex {
+    display: grid;
+    grid-template-columns: 58% 38%;
+}
+
+#page1-flex-left h3{
+    font-size: 1.8vw;
+    font-weight: 400;
+    line-height: 1.9vw;
+}
+
+#page1-flex-right h3{
+    padding-left: 11vw;
+    font-size: 1.1vw;
+    font-weight: 400;
+    line-height: 1.1vw;
+}
+
+#page1-flex-right h3:nth-last-child(1) {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#page1-flex-right #firstH3 {
+    font-weight: 500;
+    margin-bottom: 1vw;
+    font-size: .8 !important;
+}
+
+#page1text {
+    padding-top: 4vw;
+}
+
+#page1text h1 {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+#page2 {
+    width: 100%;
+    height: 80vh;
+    padding: 0vw 2vw;
+    border-bottom: 1px solid #ffffff71;
+}
+
+#page2text {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page2text h1 {
+    font-size: 5.5vw;
+    font-weight: 500;
+}
+
+#page2text h4 {
+    padding-top: 1vw;
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+
+#page2img {
+    display: flex;
+    gap: 3vw;
+    padding-top: 1vw;
+}
+
+#page2img h4 {
+    padding-right: 2.5vw;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    font-weight: 500;
+}
+
+#page3 {
+    width: 100%;
+    height: 80vh;
+    padding: 0vw 2vw;
+    margin-bottom: 10vw;
+}
+
+#page3text {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page3text h1 {
+    font-size: 5.5vw;
+    font-weight: 500;
+}
+
+#page3text h4 {
+    padding-top: 1vw;
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+
+#page3img {
+    display: grid;
+    grid-template-columns: 62% 35%;
+    gap: 3vw;
+    padding-top: 1vw;
+}
+
+#page3img img {
+    width: 100%;
+    height: 90%;
+}
+
+#page3img h4 {
+    padding-right: 3.5vw;
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    font-weight: 500;
+}

@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Font';
+    background-color: #000410;
+}
+
+
+
+#contact {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    z-index: 100;
+}
+
+#contact #navbar {
+    position: relative;
+}
+
+#contact #navbar .left-nav h3 a, #contact #navbar .right-nav h3 a{
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#contact h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 6vw;
+    font-weight: 400;
+}

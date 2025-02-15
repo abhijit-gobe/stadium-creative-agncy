@@ -1,0 +1,84 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Font';
+    background-color: #000410;
+}
+
+#directors {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    z-index: 100;
+}
+
+#directors #navbar {
+    position: relative;
+}
+
+#directors #navbar .left-nav h3 a, #directors #navbar .right-nav h3 a{
+    color: #fff;
+    mix-blend-mode: difference;
+    cursor: pointer;
+
+}
+
+#text-container {
+    width: 100%;
+    padding: 2vw;
+    padding-top: 8vw;
+    margin-bottom: 15vw;
+    height: fit-content;
+    position: relative;
+    z-index: 10;
+}
+
+#text-container .link {
+    padding-top: 4.5vw;
+    z-index: 10;
+    padding-bottom: 1vw;
+    border-bottom: 1px solid #ffffff20;
+    transition: opacity 0.3s ease;
+}
+
+#text-container .link h1 {
+    font-weight: 500;
+    z-index: 10;
+    mix-blend-mode: difference;
+    background-color: red;
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-reveal {
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all .5s ease-out;
+    z-index: 1000;
+}
+
+.hover-reveal video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: transform .4s ease-out;
+}

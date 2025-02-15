@@ -1,0 +1,121 @@
+#about {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    z-index: 100;
+}
+
+#navbar {
+    position: fixed;
+}
+#about #navbar .left-nav h3 a, #about #navbar .right-nav h3 a{
+    color: #000;
+    mix-blend-mode: difference;
+}
+
+#about-text {
+    width: 100%;
+    position: relative;
+    padding: 6vw 2vw;
+    padding-top: 10vw;
+}
+
+#about-text h1{
+    width: 100%;
+    color: #000;
+    font-size: 4.34vw;
+    font-weight: 500;
+    line-height: 4vw;
+}
+
+#about-img {
+    width: 100%;
+    height: 110vh;
+    margin-bottom: 2vw;
+}
+
+#about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#about-text2 {
+    width: 100%;
+    height: 35vh;
+    padding: 0 2vw;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 3vw;
+}
+
+#left-text h3 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #000;
+}
+
+#right-text h3 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #000;
+}
+
+#about-images {
+    width: 100%;
+    height: 100vh;
+    padding: 5vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.images-elem {
+    width: 32vw;
+    height: 85vh;
+    background-color: red;
+}
+
+.images-elem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#about-logos {
+    width: 100%;
+    height: fit-content;
+    padding: 5vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.logo-elem {
+    flex-shrink: 0;
+    width: 13.3vw;
+    height: 12vw;
+    border: 1px solid rgba(0, 0, 0, 0.46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-elem p {
+    color: #000;
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.footer-1-text h3, .footer-1-text h5, #footer-2 h3 {
+    color: #000;
+    font-weight: 600;
+}
+
+#footer-2 {
+    border-bottom: 1px solid #0000008a;
+}
